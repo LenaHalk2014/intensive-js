@@ -28,6 +28,8 @@ const tabsFunc = () => {
     const changeContent = (index) => {
         tabsTitle.textContent = `Смартфон Apple iPhone 13 Pro ${tadsOptions[index].memory}GB ${tadsOptions[index].name}`
         tabsPrice.textContent = `${tadsOptions[index].price}₽`
+        document.title = `Смартфон Apple iPhone 13 Pro ${tadsOptions[index].memory}GB ${tadsOptions[index].name}`
+
 
         tabsImage.setAttribute('src', tadsOptions[index].image)
     }
